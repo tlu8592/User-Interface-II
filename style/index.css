@@ -211,3 +211,7 @@ footer p {
 .contact-button:hover {
     background-color: lightgreen;
 }
+
+.LI-profile-badge {
+    margin-top: 20px;
+}
