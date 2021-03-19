@@ -49,6 +49,10 @@ The following goals are designed to stretch your knowledge and may require addit
 - [ ] Design and execute your own wireframe for `About`, `Projects`, and `Contact` pages
 - [ ] Host your website on Netlify.com
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/22882d55-2c88-495d-a187-80df9f370084/deploy-status)](https://app.netlify.com/sites/condescending-nightingale-5b36bc/deploys)
+
+
+
 ## FAQs
 
 **What is a wireframe? How do I use one?**
