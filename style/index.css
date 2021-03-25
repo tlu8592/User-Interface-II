@@ -50,7 +50,6 @@ table {
 /* wireframe option 1 */
 
 body {
-    /* border: 5px solid red; */
     max-width: 930px;
     background-color: lightsteelblue;
 }
@@ -63,7 +62,6 @@ p {
 
 /* header title */
 header {
-    /* border: 4px solid gold; */
     background-color: lightsalmon;
     padding: 40px 20px;
 }
@@ -79,7 +77,6 @@ h1 {
 
 /* navigation */
 nav {
-    /* border: 5px solid green; */
     padding: 20px 15px;
     margin-left: 10px;
 }
@@ -103,7 +100,6 @@ nav a:hover {
     margin-top: 15px; 
 }
 .image img {
-    /* border: 5px solid crimson; */
     width: 430px;
     height: 340px;
     margin-top: 10px;
@@ -111,7 +107,6 @@ nav a:hover {
 }
 
 .text {
-    /* border: 5px solid blueviolet; */
     width: 458px;
     height: 300px;
     padding-left: 40px;
@@ -120,7 +115,6 @@ nav a:hover {
 }
 
 .text h4 {
-    /* border: 5px solid rosybrown; */
     font-size: 35px;
     margin-top: 80px;
     margin-bottom: 45px;
@@ -146,7 +140,7 @@ nav a:hover {
 }
 
 .text p {
-    /* border: 5px solid darkgreen; */
+    
     font-size: 23px;
     padding-right: 40px;
     margin-top: 40px;
@@ -154,7 +148,6 @@ nav a:hover {
 
 /* section2 */
 .section2 {
-    /* border: 5px solid rebeccapurple; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -163,19 +156,16 @@ nav a:hover {
 }
 
 .box {
-    /* border: 5px solid greenyellow; */
     width: 210px;
     height: 242px;
 }
 
 .box img {
-    /* border: 5px solid peru; */
     width: 200px;
     height: 200px;
 }
 
 .box p {
-    /* border: 4px solid sandybrown; */
     text-align: center;
     margin-top: 10px;
 }
@@ -217,118 +207,95 @@ footer p {
 
 /* media queries */
 
-@media (max-width: 500px) {
-    /* wireframe option 1 */
-
+/* wireframe option 1 */
+@media (max-width: 800px) {
     body {
-        /* border: 5px solid red; */
-        /* max-width: 50%; */
-        /* background-color: lightsteelblue; */
+        max-width: 80rem;
     }
 
-    /* p {
-        font-family: fantasy;
-        color:navy;
-        font-weight: 800;
-    } */
+    /* section1 */
+    .section1 {
+        width: 95%;
+        margin-left: 3%;
+    }
+    
+    .image img {
+        width: 23rem;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .text {
+        height: 21.4rem;
+        padding: 0;
+        margin-top: 0;
+        margin-left: 2rem;
+    }
+
+    .text h4 {
+        margin-top: 14%;
+    }
+
+    .text p {
+        padding: 0;
+        font-size: 1.3rem;
+        line-height: 1.2;
+    }
+
+    /* section2 */
+    .section2 {
+        max-width: 70rem;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        max-width: 50rem;
+    }
 
     /* header title */
     header {
-        /* border: 4px solid gold; */
-        /* background-color: lightsalmon; */
-        /* padding: 40px 20px; */
-        
-        /* changes */
         padding-top: 1.9rem;
         padding-bottom: 0.1rem;
     }
 
     h1 {
-
-        /* font-size: 46px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: maroon;
-        padding: 10px;
-        margin-bottom: 1px;
-        text-transform: uppercase; */
-        
-        /* changes */
         text-align: center;
         font-size: 4.2rem;
     }
 
     /* navigation */
     nav {
-        /* border: 5px solid green; */
-        /* padding: 20px 15px; */
-        /* margin-left: 10px; */
-        /* width: 25%; */
-        
-        /* changes */
         padding-top: 0.2rem;
         padding-right: 30%;
         padding-left: 30%;
-        /* padding-left: 3%; */
         display: flex;
         flex-direction: column;
         justify-content: center;
-
     }
 
     nav a {
-        border: 2px solid black;
-        /* padding: 7px 19px;
-        text-decoration: none;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: black;
-        background-color: palegoldenrod; */
-
-        /* changes */
         padding: 9%;
         font-size: 1.4rem;
         text-align: center;
-        
     }
 
-    nav a:hover {
-        /* background-color: gold; */
-    }
+   
 
     /* section1 */
     .section1 {
-        /* display: flex;
-        margin-top: 15px;  */
-        
-        /* changes */
         margin: 0;
-        /* border: 2px solid chartreuse; */
         display: flex;
         flex-direction: column;
-        
     }
+    
     .image img {
-        /* border: 5px solid crimson; */
-        /* width: 430px;
-        height: 340px;
-        margin-top: 10px;
-        margin-left: 15px; */
-        
-        /* changes */
-        /* margin-left: 6%; */
         width: 95%;
         margin: 0.8rem;
     }
 
     .text {
-        /* border: 5px solid blueviolet; */
-        /* width: 458px;
-        height: 300px;
-        padding-left: 40px;
-        margin-top: 10px;
-        margin-left: 60px; */
-
-        /* changes */
-        /* width: 0; */
         width: 25rem;
         height: 17rem;
         padding: 0;
@@ -338,303 +305,26 @@ footer p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
     }
 
     .text h4 {
-        /* border: 5px solid rosybrown; */
-        /* font-size: 35px;
-        margin-top: 80px;
-        margin-bottom: 45px;
-        font-family: cursive;
-        color: darkolivegreen; */
-
-        /* changes */
         font-size: 2.5rem;
         margin: 0;
-        
-        /* margin-bottom: 0.9em; */
-        
     }
 
     .projects-button {
-        /* border: 5px groove darkcyan;
-        padding: 12px 20px;
-        margin-top: 80px;
-        font-size: 24px;
-        font-weight: 540;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        text-decoration: none;
-        color:darkslategray;
-        background-color: mediumaquamarine; */
-
-        /* changes */
-        
         margin-top: 1.5rem;
-        
-    }
-
-    .projects-button:hover {
-        /* background-color: darkturquoise; */
     }
 
     .text p {
-        /* border: 5px solid darkgreen; */
-        /* font-size: 23px;
-        padding-right: 40px;
-        margin-top: 40px; */
-
-        /* changes */
         text-align: center;
         font-size: 1.2rem;
         padding: 0;
         margin-top: 1.5rem;
-
     }
 
     /* section2 */
     .section2 {
-        /* border: 5px solid rebeccapurple; */
-        /* display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-top: 40px;     */
-
-        /* changes */
-        margin-top: 0;
-        
-        
-    }
-
-    .box {
-        /* border: 5px solid greenyellow; */
-        /* width: 210px;
-        height: 242px; */
-
-      
-    }
-
-    .box img {
-        /* border: 5px solid peru; */
-        /* width: 200px;
-        height: 200px; */
-
-      
-    }
-
-    .box p {
-        /* border: 4px solid sandybrown; */
-        /* text-align: center;
-        margin-top: 10px; */
-    }
-
-    /* footer */
-    footer {
-        /* display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: limegreen;
-        padding-top: 50px;
-        padding-bottom: 50px; */
-
-        /* changes */
-
-    }
-
-    footer p {
-        /* font-size: 26px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: darkgreen; */
-    }
-
-    .contact-button {
-        /* padding: 10px 40px;
-        font-size: 15px;
-        margin-top: 20px;
-        color: darkgreen;
-        text-decoration: none;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        border: 5px inset darkolivegreen;
-        background-color: yellowgreen; */
-    }
-
-    .contact-button:hover {
-        /* background-color: lightgreen; */
-    }
-
-    .LI-profile-badge {
-        /* margin-top: 20px; */
-    }
-}
-
-@media (max-width: 800px) {
-    /* wireframe option 1 */
-
-    body {
-        /* border: 5px solid red; */
-        /* max-width: 930px;
-        background-color: lightsteelblue; */
-        
-    }
-
-    p {
-        /* font-family: fantasy;
-        color:navy;
-        font-weight: 800; */
-    }
-
-    /* header title */
-    header {
-        /* border: 4px solid gold; */
-        /* background-color: lightsalmon;
-        padding: 40px 20px; */
-    }
-
-    h1 {
-        /* font-size: 46px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: maroon;
-        padding: 10px;
-        margin-bottom: 1px;
-        text-transform: uppercase; */
-    }
-
-    /* navigation */
-    nav {
-        /* border: 5px solid green; */
-        /* padding: 20px 15px;
-        margin-left: 10px; */
-    }
-
-    nav a {
-        /* border: 2px solid black;
-        padding: 7px 19px;
-        text-decoration: none;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: black;
-        background-color: palegoldenrod; */
-    }
-
-    nav a:hover {
-        /* background-color: gold; */
-    }
-
-    /* section1 */
-    .section1 {
-        /* display: flex;
-        margin-top: 15px;  */
-    }
-    .image img {
-        /* border: 5px solid crimson;
-        width: 430px;
-        height: 340px;
-        margin-top: 10px;
-        margin-left: 15px; */
-    }
-
-    .text {
-        /* border: 5px solid blueviolet; */
-        /* width: 458px;
-        height: 300px;
-        padding-left: 40px;
-        margin-top: 10px;
-        margin-left: 60px; */
-    }
-
-    .text h4 {
-        /* border: 5px solid rosybrown; */
-        /* font-size: 35px;
-        margin-top: 80px;
-        margin-bottom: 45px;
-        font-family: cursive;
-        color: darkolivegreen; */
-
-    }
-
-    .projects-button {
-        /* border: 5px groove darkcyan;
-        padding: 12px 20px;
-        margin-top: 80px;
-        font-size: 24px;
-        font-weight: 540;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        text-decoration: none;
-        color:darkslategray;
-        background-color: mediumaquamarine; */
-    }
-
-    .projects-button:hover {
-        /* background-color: darkturquoise; */
-    }
-
-    .text p {
-        /* border: 5px solid darkgreen; */
-        /* font-size: 23px;
-        padding-right: 40px;
-        margin-top: 40px; */
-    }
-
-    /* section2 */
-    .section2 {
-        /* border: 5px solid rebeccapurple; */
-        /* display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-top: 40px;     */
-    }
-
-    .box {
-        /* border: 5px solid greenyellow; */
-        /* width: 210px;
-        height: 242px; */
-    }
-
-    .box img {
-        /* border: 5px solid peru; */
-        /* width: 200px;
-        height: 200px; */
-    }
-
-    .box p {
-        /* border: 4px solid sandybrown; */
-        /* text-align: center;
-        margin-top: 10px; */
-    }
-
-    /* footer */
-    footer {
-        /* display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: limegreen;
-        padding-top: 50px;
-        padding-bottom: 50px; */
-    }
-
-    footer p {
-        /* font-size: 26px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: darkgreen; */
-    }
-
-    .contact-button {
-        /* padding: 10px 40px;
-        font-size: 15px;
-        margin-top: 20px;
-        color: darkgreen;
-        text-decoration: none;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        border: 5px inset darkolivegreen;
-        background-color: yellowgreen; */
-    }
-
-    .contact-button:hover {
-        /* background-color: lightgreen; */
-    }
-
-    .LI-profile-badge {
-        /* margin-top: 20px; */
+       margin-top: 0;
     }
 }
